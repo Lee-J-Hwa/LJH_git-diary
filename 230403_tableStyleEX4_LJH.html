@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>TableStyleEX4</title>
+    <style>
+        body {
+            text-align: center;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 650px; height: 250px;
+            table-layout: fixed;
+        }
+        table caption {
+            font-weight: bold;
+        }
+        table td {
+            border: 1px solid black;
+            background-color: goldenrod;
+            color: white;
+        }
+        table thead,tbody {
+            height: 50px;
+        }
+        table tfoot td {
+            height: 40px;
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>테이블 스타일 연습 2</h1>
+    <table class="box">
+        <caption>소</caption>
+        <thead>
+            <tr>
+                <td>소머리</td>
+                <td>목심</td>
+                <td>등심<br>(살치살·<a href="#">꽃등심</a>)</td>
+                <td>채끝살</td>
+                <td>우둔<br>(홍두깨살)</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <td rowspan="2">앞다리<br>(부채살)</td>
+                <td>갈비<br>(안창살·제비추리)</td>
+                <td>안심</td>
+                <td rowspan="2">설도<br>(도가니살)</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td colspan="2">양지<br>(차돌박이·우삼겹)</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>사태</td>
+                <th></th>
+                <th></th>
+                <td>사태<br>(아롱사태)</td>
+            </tr>                        
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <td>우족</td>
+                <th></th>
+                <th></th>
+                <td>우족</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

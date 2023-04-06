@@ -6,6 +6,19 @@
     <style>
         html {
             scroll-behavior: smooth;
+            height: 100%;
+            overflow-y: auto;
+            overflow: scroll;
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px; height: 10px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: white;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: black;
         }
         body {
             margin: 0;

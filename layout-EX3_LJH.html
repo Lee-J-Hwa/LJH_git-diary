@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout-EX3</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 30px auto;
+            width: 980px;
+        }
+        header ul {
+            list-style: none;
+            padding: 0;
+            width: 980px; 
+            height: 50px;
+            background-color: purple;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            }
+            header ul li {
+                display: inline-block;
+            }            
+        header ul li a {
+            display: block;
+            text-decoration: none;
+            text-decoration-line: underline;
+            float: left;
+            width: 140px;
+            line-height: 50px;
+            color: white;
+            font-weight: bold;
+        }
+        header ul li a:hover {
+            background-color: plum;
+            color: darkmagenta;
+        }
+        article {
+            margin: 0 auto;
+        }       
+        article h2 {
+            width: 980px;
+            height: 100px;
+            line-height: 100px;
+            margin: 20px auto;
+            margin-bottom: 30px;
+            background-color: pink;
+        }
+        article ul {
+            list-style: none;
+            padding: 0;
+            width: 980px; 
+            height: 50px;
+            background-color: white;
+            display: inline-block;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        article ul li {
+            float: left;
+            width: 313px;
+            line-height: 50px;
+            color: black;
+            font-weight: bold;
+            background-color: hotpink;
+            margin-right: 20px;
+        }
+        .margin {
+            margin-right: 0;
+        }
+        footer h3 {
+            background-color: mediumslateblue;
+            width: 980px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>로고</h1>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">상품</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </header>
+    <main>
+        <article>
+            <h2>컨텐츠</h2>
+            <ul>
+                <li>1번째 열</li>
+                <li>2번째 열</li>
+                <li class="margin">3번째 열</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <h3>ⓒcopyright 2022</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>background-EX</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 50px 0 10px 0;
+            border: 5px solid black;
+            border-radius: 20px;
+            width: 500px;
+            height: 250px;
+            margin: 50px auto;
+            text-align: center;
+            
+        }
+        ul li {
+            margin: 15px;
+        }
+        ul li input {
+            margin: 0;
+            background-color: pink;
+            font-size: 20px;
+            width: 250px;
+            padding: 10px;
+            border-radius: 20px;
+            padding-left: 60px;
+            
+        }
+        #username {
+            background-image: url(./image/my.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #userEmail {
+            background-image: url(./image/email.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;   
+        }
+        #usertel {
+            background-image: url(./image/tel.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;            
+        }        
+        ul li input:focus {
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <ul>
+        <li><input type="text" id="username" placeholder="이름을 입력하세요"></li>
+        <li><input type="email" id="userEmail" placeholder="이메일을 입력하세요"></li>
+        <li><input type="tel" id="usertel" placeholder="연락처를 입력하세요"></li>
+    </ul>
+    </form>
+</body>
+</html>

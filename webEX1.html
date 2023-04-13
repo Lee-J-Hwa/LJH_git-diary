@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>web-EX1</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: burlywood;
+        }
+        header {
+            margin: 0 auto;
+            padding: 0;
+            width: 1000px;
+        }
+        header h1 {
+            width: 830px;
+            background-color: brown;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            padding-left: 150px;
+            float: left;
+            background-image: url(./image/빵.jpeg);
+            background-repeat: no-repeat;
+            background-size: 130px;
+        }
+        header ul {
+            list-style: none;
+            background-color: gold;
+            padding-left: 0;
+            margin: 0;
+            width: 1000px;
+            float: left;
+        }
+        header li {
+            display: inline-block;
+        }
+        header li a {
+            display: block;
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+        header li a:hover {
+            background-color: black;
+            color: white;
+        }
+        main {
+            background-color: #ddd;
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        main .figure1 {
+            margin: 20px;
+            padding: 5px;
+            background-color: white;
+            width: 300px;
+            position: relative;
+            height: 230px;
+            float:left;
+            border: 1px solid red;
+        }
+        main .figure1 img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        main .figure1 figcaption {
+            color: gray;
+            padding-bottom: 10px;
+            position: absolute;
+            right: 0;
+        }
+        main .arti1 {
+            width: 300px;
+            padding: 20px;
+            margin: 0;
+            float: left;
+            position: relative;
+        }
+        main .arti1 h2 {
+            position: absolute;
+            top: 0;
+        }
+        main .arti1 h3 {
+            position: absolute;
+            color: red;
+            top: 50px;
+        }
+        main .arti1 p {
+            position: absolute;
+            top: 100px;
+        }
+        main aside {
+            margin: 0;
+            width: 300px;
+            float: right;
+        }
+        main aside ul {
+            list-style: none;
+            height: 600px;
+            margin: 0;
+            padding:0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: white;
+            border-left: 1px red solid;
+        }
+        main aside ul li h2 {
+            color: red;
+        }
+        main aside ul li {
+            padding: 10px;
+            font-size: 20px;
+        }
+        .line {
+            border-bottom: red solid 1px;
+        }       
+        main .figure2 {
+            margin: 20px;
+            padding: 5px;
+            background-color: white;
+            width: 300px;
+            position: relative;
+            height: 230px;
+            float:left;
+            border: 1px solid red;
+        } 
+        main .figure2 img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        main .figure2 figcaption {
+            color: gray;
+            padding-bottom: 10px;
+            position: absolute;
+            right: 0;
+        }  
+        main .arti2 {
+            width: 300px;
+            padding: 20px;
+            margin: 0;
+            float: left;
+            position: relative;
+        }
+        main .arti2 h2 {
+            position: absolute;
+            top: 0;
+        }
+        main .arti2 h3 {
+            position: absolute;
+            color: red;
+            top: 50px;
+        }
+        main .arti2 p {
+            position: absolute;
+            top: 100px;
+        }                             
+        footer {
+            margin: 0 auto;
+            padding: 0;
+            width: 1000px;
+        }
+        footer h3 {
+            width: 980px;
+            background-color: brown;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            float: left;
+        }
+        .margin {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kim's Bakery<br>Cooking Class</h1>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">교실</a></li>
+            <li><a href="#">케이터링</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </header>
+    <main>
+        <figure class="figure1">
+            <img src="./image/크루아상.jpg" alt="빵 사진입니다."><figcaption>크루아상(croissant)</figcaption>
+        </figure>
+        <article class="arti1">
+            <h2>제과·제빵 연구소</h2>
+            <h3>런던에서의 5주 코스</h3>
+            <p>5주간 제과·제빵에 대해 소개하고 제과와 제빵을 가르친다.</p>
+        </article>
+        <aside>
+            <ul>
+                <li><h2>인기레시피</h2></li>
+                <li class="line">소금빵</li>
+                <li class="line">바게트</li>
+                <li class="line">크루아상</li>
+                <li class="line margin">마카롱</li>
+                <li><h2>연락처</h2><p>경기 수원시 팔달구 매산동</p></li>
+            </ul>
+        </aside>         
+        <figure class="figure2">
+            <img src="./image/커피.jpg" alt="커피 사진입니다."><figcaption>커피(coffee)</figcaption>
+        </figure>        
+        <article class="arti2">
+            <h2>바리스타 클래스</h2>
+            <h3>카페 창업 가능</h3>
+            <p>바리스타 코스에서는 다양한 커피를 만드는 방법을 배워본다.</p>
+        </article>      
+    </main>
+    <footer>
+        <h3>ⓒKim's Bakery 김씨네 베이커리</h3>
+    </footer>
+</body>
+</html>

@@ -5,15 +5,19 @@
     <title>web-EX1</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+        
         body {
             margin: 0;
             padding: 0;
-            background-color: burlywood;
+            background-image: url(./image/바탕.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         header {
             margin: 0 auto;
             padding: 0;
             width: 1000px;
+            border-top: 1px black solid;
         }
         header h1 {
             width: 830px;
@@ -23,9 +27,11 @@
             padding: 20px;
             padding-left: 150px;
             float: left;
-            background-image: url(./image/빵.jpeg);
+            background-image: url(./image/빵-바탕.jpg);
             background-repeat: no-repeat;
             background-size: 130px;
+            border-left: 1px black solid;
+            border-right: 1px black solid;
         }
         header ul {
             list-style: none;
@@ -34,6 +40,8 @@
             margin: 0;
             width: 1000px;
             float: left;
+            border-left: 1px black solid;
+            border-right: 1px black solid;
         }
         header li {
             display: inline-block;
@@ -44,7 +52,7 @@
             color: brown;
             font-weight: bold;
             text-align: center;
-            width: 100px;
+            width: 80px;
             height: 50px;
             line-height: 50px;
         }
@@ -57,6 +65,8 @@
             width: 1000px;
             margin: 0 auto;
             overflow: hidden;
+            border-left: 1px black solid;
+            border-right: 1px black solid;
         }
         main .figure1 {
             margin: 20px;
@@ -85,6 +95,7 @@
             margin: 0;
             float: left;
             position: relative;
+            box-sizing: border-box;
         }
         main .arti1 h2 {
             position: absolute;
@@ -105,6 +116,7 @@
             float: right;
         }
         main aside ul {
+            width: 301px;
             list-style: none;
             height: 600px;
             margin: 0;
@@ -177,6 +189,9 @@
             margin: 0;
             padding: 10px;
             float: left;
+            border-left: 1px black solid;
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;
         }
         .margin {
             margin-bottom: 20px;
@@ -196,7 +211,7 @@
     </header>
     <main>
         <figure class="figure1">
-            <img src="./image/크루아상.jpg" alt="빵 사진입니다."><figcaption>크루아상(croissant)</figcaption>
+            <img src="./image/크루아상.jpg" alt="빵 사진입니다."><figcaption>크루아상(Croissant)</figcaption>
         </figure>
         <article class="arti1">
             <h2>제과·제빵 연구소</h2>
@@ -214,11 +229,11 @@
             </ul>
         </aside>         
         <figure class="figure2">
-            <img src="./image/커피.jpg" alt="커피 사진입니다."><figcaption>커피(coffee)</figcaption>
+            <img src="./image/커피.jpg" alt="커피 사진입니다."><figcaption>라떼(Latte)</figcaption>
         </figure>        
         <article class="arti2">
             <h2>바리스타 클래스</h2>
-            <h3>카페 창업 가능</h3>
+            <h3>1:1 맞춤 교육 컨설팅</h3>
             <p>바리스타 코스에서는 다양한 커피를 만드는 방법을 배워본다.</p>
         </article>      
     </main>

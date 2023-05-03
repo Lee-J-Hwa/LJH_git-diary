@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-web</title>
+    <style>
+        body {
+            background-color: #d8e0ca;
+            color: #63635b;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        /* 머리 */
+        header {
+            width: 100%;
+            background-color: #fff;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 200px;
+        }
+        strong {
+            color: black;
+            font-style: italic;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 4rem;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        p {
+            padding: 20px 0;
+        }
+        /* 버튼 */
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            margin: 30px 0;
+            border: 2px solid #63635b;;
+            width: 20vw;
+            height: 7vh;
+            line-height: 7vh;
+            border-radius: 30px;
+            font-weight: bold;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        main h3 {
+            width: 16vw;
+        }
+        /* 이미지 */
+        img {
+            width: 50vw;
+            height: 100%;
+        }
+        /* 메인 */
+        .first {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 0 0 0 6.5vw;
+        }
+        .first p {
+            width: 35%;
+            line-height: 3vh;
+        }
+        .first h3 {
+            position: absolute;
+            top: 115vh;
+        }
+        .last {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-flow: column wrap;
+            
+        }
+        .last p {
+            width: 35%;
+            line-height: 3vh;
+        }
+        .last h3 {
+            position: absolute;
+            top: 235vh; left: 57vw;
+        }
+        aside {
+            display: flex;
+            height: 60vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            display: flex;
+            padding: 0px 100px;
+        }
+        aside p {
+
+            line-height: 3vh;
+        }
+        /* 꼬리 */
+        footer {
+            width: 100%;
+            background-color: #fff;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 200px;
+        }
+        footer input {
+            width: 40vw;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 20px 30px;
+        }
+        footer h3 {
+            position: absolute;
+            top: 292.5vh; left: 60vw;
+        }
+        footer svg {
+            display: flex;
+            
+
+            width: 3vw; height: 30vh;
+        }
+        .icon1 {
+            position: absolute;
+            top:292vh; left: 14vw;
+        }
+        .icon2 {
+            position: absolute;
+            top:292vh; left: 17vw;
+        }
+        .icon3 {
+            position: absolute;
+            top:292vh; left: 20vw;
+        }
+        .icon4 {
+            position: absolute;
+            top:292vh; left: 23vw;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h4><strong>Aliquam</strong> Consequat</h4>
+        <h1>Sed amet</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, deleniti odio? <br>Incidunt ipsum ipsam ad illum eum magni sit</p>
+        <h3>S A G I T T I S →</h3>
+    </header>
+    <main>
+        <section class="first">
+            <h4><strong>Nisi</strong> Pellentesque</h4>
+            <h2>Morbi tincidunt</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorem minima sapiente quibusdam</p>
+            <img src="./images/Photo.jpg" alt="산 이미지 입니다.">
+            <h3>L E C T U S →</h3>
+        </section>
+        <aside>
+            <div class="box1">
+                <h4><strong>Dolor</strong> Ultrices</h4>
+                <h2>Ullamcorper</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptas. Omnis saepe repellendus est facilis deleniti</p>
+                <h3>M A G N A →</h3>
+            </div>
+            <div class="box2">
+                <h4><strong>Magna</strong> Aenean</h4>
+                <h2>Faucibus</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ipsum rem sit nulla, quos id eaque laudantium pariatur.</p>
+                <h3>T E L L U S →</h3>
+            </div>
+        </aside>
+        <section class="last">
+            <img src="./images/photo2.jpg" alt="절벽 이미지 입니다.">    
+            <h4><strong>Odio</strong> Veroeros</h4>
+            <h2>Quam nulla</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorem minima sapiente quibusdam</p>
+            <h3>E U I S M O D →</h3>         
+        </section>
+    </main>
+    <footer>
+        <h4><strong>Vitae</strong> Aliquam</h4>
+        <h1>Auctor orci</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quia unde iste, consequatur aliquid, praesentium blanditiis quibusdam laudantium itaque</p>
+        <input type="email" placeholder="Email">
+        <h3> U B S C R I B E →</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="icon1"><path d="M727 976q-47.5 0-80.75-33.346Q613 909.307 613 861.669q0-6.669 1.5-16.312T619 828L316 652q-15 17-37 27.5T234 690q-47.5 0-80.75-33.25T120 576q0-47.5 33.25-80.75T234 462q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613 298.25 613 290q0-47.5 33.25-80.75T727 176q47.5 0 80.75 33.25T841 290q0 47.5-33.25 80.75T727 404q-23.354 0-44.677-7.5T646 372L343 540q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345 599 343 607l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841 862q0 47.5-33.25 80.75T727 976Zm.035-632Q750 344 765.5 328.465q15.5-15.535 15.5-38.5T765.465 251.5q-15.535-15.5-38.5-15.5T688.5 251.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm-493 286Q257 630 272.5 614.465q15.5-15.535 15.5-38.5T272.465 537.5q-15.535-15.5-38.5-15.5T195.5 537.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm493 286Q750 916 765.5 900.465q15.5-15.535 15.5-38.5T765.465 823.5q-15.535-15.5-38.5-15.5T688.5 823.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5ZM727 290ZM234 576Zm493 286Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 96 960 960" width="48" class="icon2"><path d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 96 960 960" width="96" class="icon3"><path d="M453 776h60V536h-60v240Zm26.982-314q14.018 0 23.518-9.2T513 430q0-14.45-9.482-24.225-9.483-9.775-23.5-9.775-14.018 0-23.518 9.775T447 430q0 13.6 9.482 22.8 9.483 9.2 23.5 9.2Zm.284 514q-82.734 0-155.5-31.5t-127.266-86q-54.5-54.5-86-127.341Q80 658.319 80 575.5q0-82.819 31.5-155.659Q143 347 197.5 293t127.341-85.5Q397.681 176 480.5 176q82.819 0 155.659 31.5Q709 239 763 293t85.5 127Q880 493 880 575.734q0 82.734-31.5 155.5T763 858.316q-54 54.316-127 86Q563 976 480.266 976Zm.234-60Q622 916 721 816.5t99-241Q820 434 721.188 335 622.375 236 480 236q-141 0-240.5 98.812Q140 433.625 140 576q0 141 99.5 240.5t241 99.5Zm-.5-340Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 96 960 960" width="144" class="icon4"><path d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140 371v465h680V371L480 594Zm0-60 336-218H145l335 218ZM140 371v-55 520-465Z"/></svg>
+    </footer>
+</body>
+</html>
